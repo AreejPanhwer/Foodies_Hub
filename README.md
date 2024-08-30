@@ -44,7 +44,7 @@ Welcome to **FoodiesHub**, your ultimate culinary companion! This website is des
 
 ## 🤝 Contact
 
-For any inquiries or support, please contact us at [your-email@example.com](areejpanhwer82@gmail.com). 
+For any inquiries or support, please contact us at [areejpanhwer82@gmail.com](areejpanhwer82@gmail.com). 
 
 Thank you for visiting **FoodiesHub**! We hope you enjoy exploring the culinary delights and sharing your own food experiences.
 
