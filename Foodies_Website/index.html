@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Explore-food">Explore - food</a>
+                  </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#faq">FAQ</a>
+                  </li>
+                  <li><button class="main-btn">1200 345 123</button></li>
+              </ul>
+            </div>
+          </nav>
+    </div>
+         <!-- section-1 top-banner -->
+         <section id="home">
+            <div class="container-fluid px-0 top-banner">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-5 col-md-6">
+                    <h1>Good Food Choices are good Investments.</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Etiam et purus a odio finibus bibendum amet leo.     
+                    </p>
+                    <div class="mt-4">
+                    <button class="main-btn">Order now<i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="white-btn ms-lg-4 mt-lg-0 mt-4">Order now   ></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           </section>   
+     <!-- section-2 counter -->
+              
+     <section id="counter">
+      <section class="counter-section">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+              <h2>
+                <span id="count1"></span>+
+              </h2>
+              <p>SAVINGS</p>
+              </div>
+              <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+                <h2>
+                  <span id="count2"></span>+
+                </h2>
+                <p>PHOTOS</p>
+            </div>
+            <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+              <h2>
+                <span id="count3"></span>+
+              </h2>
+              <p>ROCKETS</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count4"></span>+
+            </h2>
+            <p>GLOBES</p>
+          </div>
+        </div>
+        </div>
+      </section>
+    </section>
+
+
+       <script>
+           // counter desing
+document.addEventListener("DOMContentLoaded" ,() =>{
+    function counter(id, start, end, duration){
+        let obj = document.getElementById(id),
+        current = start,
+        range = end -start,
+        increment = end > start ? 1: -1,
+        step = Math.abs(Math.floor(duration / range)),
+        timer = setInterval(() => {
+            current += increment;
+            obj.textContent = current;
+            if(current == end){
+              clearInterval(timer);
+            } 
+            
+        }, step);
+    }
+      counter("count1",0, 1287,3000);
+      counter("count2",100, 5786,2500);
+      counter("count3",0, 1440,3000);
+      counter("count4",0, 7110,3000);
+}); 
+       </script>
+      <br>
+     <!-- section-3 About -->
+         <section id="about">
+          <div class="about-section wrapper">
+          <div class="container">
+            <div class="row align-items-center">
+            <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+              <div class="card border-0">
+                <img src="images/img/img-1.png" class="img-fluid">
+              </div>
+            </div> 
+            <div class="col-lg-5 col-md-12 text-sec">
+              <h2> we pride overselves on making reel food from the best ingredients</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam in, aperiam aut, nisi impedit delectus id officiis provident alias neque! Exercitationem quibusdam quas sequi, consequatur laborum rem quasi aliquam!</p>
+              <button class="main-btn mt-4">Learn More</button>
+            </div>
+            </div>
+          </div>
+             <div class="container food-type">
+              <div class="row align-items-center">
+                <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
+                  <h2>we make everything by hand with the best possible ingredients</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, ex a optio suscipit dolor dolores cupiditate ab delectus placeat? Cumque aliquam odio error alias repudiandae eos quam itaque atque ad.</p>
+                  <ul class="list-unstyled py-3">
+                    <li> <img style="width: 30px;" src="images/img tick.png">Etiam sed dolor ac diam volutpat</li>
+                    <li> <img style="width: 30px;" src="images/img tick.png">Erat volutpat aliquet imperdiet</li>
+                    <li> <img style="width: 30px;" src="images/img tick.png">purus a edio finibus bibendus.</li>
+                  </ul>
+                  <button class="main-btn mt-4">Learn More</button>
+                </div>
+                <div class="col-lg-7 col-md-12">
+                  <div class="card border-0">
+                    <img src="images/img/img-2.png" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+             </div>
+
+          <!-- section 4 story -->
+            <section id="story">
+              <div class="story-section">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="text-Content">
+                        <h2>When a man's stomach is full it makes no difference whether he is rich or poor.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum beatae deleniti voluptate commodi nobis quae delectus iusto autem! Iste vero minima neque, mollitia a voluptates quod maiores hic necessitatibus vel.</p>
+                        <button class="main-btn mt-3">Read More</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- section 5 Explore-food -->
+                  <section id="Explore-food">
+                    <div class="explore-food wrapper">
+                      <div class="container">
+                        <div class="row">
+                          <div class="text-Content text-center">
+                           <br>
+                            <h2>Explore Our foods</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Etiem at purus odio finibus vibendum in sit
+                             amet leo. Marius faugiat erat tellus. far far away, behind the word mountains, far from the countries
+                            Vokalia and Consanantia , there live the belind texts. separated they live in Bookmarksgrove.</p>
+                          </div>
+                 </div>
+                             
+                           <!-- card section -->
+                      <div class="row pt-5">
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                          <div class="card">
+                          <img src="images/img/img-3.jpg" class="img-fluid">
+                          <div class="pt-3">
+                            <h4>Rainbow Vegetable Sandwich</h4>
+                            <p>Time: 15 - 20 Minutes | Serves: 1</p>
+                            <span>$10.50 <del>$11.70</del></span>
+                            <button class="mt-1 main-btn" >Order Now</button>
+                          </div>
+                          </div>
+                        </div>
+            
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                          <div class="card">
+                          <img src="images/img/img-4.jpg" class="img-fluid">
+                          <div class="pt-3">
+                            <h4>Vegetarian Burger</h4>
+                            <p>Time: 30 - 45 Minutes | Serves: 1</p>
+                            <span>$9.20 <del>$10.50</del></span>
+                            <button class="mt-1 main-btn" >Order Now</button>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                          <div class="card">
+                          <img src="images/img/img-5.jpg" class="img-fluid">
+                          <div class="pt-3">
+                            <h4>Respbarry Stuffed French Toast</h4>
+                            <p>Time: 10 - 15 Minutes | Serves: 1</p>
+                            <span>$12.50 <del>$13.20</del></span>
+                            <button class="mt-1 main-btn" >Order Now</button>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </section>
+<br><br>
+                   <!-- section 6 #FaQ -->
+                   
+                       <section id="faq">
+                        <div class="faq wrapper">
+                          <div class="container">
+                            <div class="row"> 
+                              <div class="col-sm-12">
+                                <div class="text-center pb-4">
+                                  <h2>Frequently Asked Question</h2>
+                                </div>
+                              </div>
+                              <div class="container align-items-justify">
+                            <div class="row pt-5">
+                              <div class="col-sm-6 mb-4 col-lg-5">
+                              <h4 ><span>+</span> Is foodies bread really baked fresh Each day?</h4>
+                              <p>Far far away, behind the word mountains, far from the countries vokalia and Consanantia, 
+                              there live the blind texts seprated they live in Bookmarksgrove right at the coast of the sementics the large language.
+                              </p>
+                               </div> 
+                            
+                              <div class="col-sm-6 mb-4 col-lg-5">
+                              <h4><span>+</span>Do you bake bread containing animal fats or products?</h4>
+                              <p>Far far away, behind the word mountains, far from the countries vokalia and Consanantia, 
+                                there live the blind texts seprated they live in Bookmarksgrove right at the coast of the sementics the large language.
+                              </p>
+                              </div>
+                            </div>
+                          </div>
+                            </div>
+                            <div class="container text-items-justify">
+                            <div class="row">
+                              <div class="col-sm-12">
+                            <div class="row pt-5">
+                              <div class="col-sm-6 mb-4 col-lg-5">
+                              <h4><span>+</span>Can 1 order your product online? </h4>
+                              <p>Far far away, behind the word mountains, far from the countries vokalia and Consanantia, 
+                              there live the blind texts seprated they live in Bookmarksgrove right at the coast of the sementics the large languag.
+                              </p>
+                              </div>
+
+                              <div class="col-sm-6 mb-4 col-lg-5">
+                              <h4><span>+</span>when are a opening a shop near me?</h4>
+                              <p>Far far away, behind the word mountains, far from the countries vokalia and Consanantia, there live the blind texts 
+                                seprated they live in Bookmarksgrove right at the coast of the sementics the large languag.
+                              </p>
+                               </div>
+                              </div>     
+                          </div>
+                          </div>
+                        </div>
+                        
+                        </div>
+                         </section>    
+
+                      <!-- section 7 book-food -->
+                          <section id=" book-food">
+                            <div class=" book-food">
+                              <div class="container book-food-text">
+                                <div class="row text-center">
+                                <div class="col-lg-9 col-md-12">
+                                  <h2>Baked Fresh daily By Bakers With Passion</h2>
+                                </div>
+                                <div class="col-lg-3 col-md-12 mt-lg-0 mt-4">
+                                  <button class="main-btn">Learn more</button>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                          </section>
+                          <br>
+                          <!-- section 8 news letter -->
+                             <section id="newsletter">
+                              <div class="newsletter wrapper">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-sm-12">
+                                      <div class="text-Content text-center pb-4">
+                                        <h2>Hurry up! Subcribe our newsletter
+                                          and get 25% Off</h2>
+                                          <p>Limited time offer of this month. No credit card required.</p>
+                                      </div>
+                                      <form class="newsletter">
+                                        <div class="row">
+                                          <div class="col-md-8 col-12">
+                                            <input class="form-control" placeholder="Email Address Here" name="" type="">
+                                          </div>
+                                          <div class="col-md-4 col-12">
+                                            <button class="main-btn" type="submit">Subcribe</button>
+                                          </div>
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                             </section>
+
+                              <!-- section 9 footer -->
+                                <footer id="footer">
+                                  <div class="footer py-5">
+                                    <div class="container">
+                                      <div class="row">
+                                        <div class="col-md-12 text-center">
+                                          <a class="footer-link" href="#">Register</a>
+                                          <a class="footer-link" href="#">Forum</a>
+                                          <a class="footer-link" href="#">Affiliate</a>
+                                          <a class="footer-link" href="#">FAQ</a>
+                                          <div class="footer-sociAL pt-4 text-center">
+                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                            <a href="#"><i class="fab fa-youtube"></i></a>
+                                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                                            <a href="#"><i class="fab fa-instagram"></i></a>
+                                          </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                          <div class="footer-copy">
+                                            <div class="copy-right text-center pt-5">
+                                              <p class="text-light">0 2024. foodies. All right reserved.</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </footer>
+<br>
+
+          </div>
+         </section>
+
+</body>
+<script src="jquery-3.7.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/687d7fdd24.js" crossorigin="anonymous"></script>
+</html>
