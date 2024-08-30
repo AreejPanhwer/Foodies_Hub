@@ -1,4 +1,4 @@
-# 🍔FoodiesHub🌟
+# 🍔FoodiesHub
 
 Welcome to **FoodiesHub**, your ultimate culinary companion! This website is designed for food enthusiasts, home cooks, and anyone who loves to explore the diverse world of cuisine. Whether you’re seeking new recipes, detailed food reviews, or culinary inspiration, FoodiesHub has you covered.
 
